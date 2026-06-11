@@ -1,0 +1,12 @@
+﻿{
+    "APP_ID":  "3890783916183939539",
+    "TOKEN_APP":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiIyMzEwMDgxMTE2MTcwOCIsInVzZXJuYW1lIjoic3lzdGVtdXNlciIsInBhc3N3b3JkIjoic3lzdGVtcGFzc3dvcmQiLCJuYmYiOjE2OTY4MjUwNDUsImV4cCI6MTcyODM2MTA0NSwiaWF0IjoxNjk2ODI1MDQ1fQ.osDpIjLUpgHRf98k0BzL7on08iMS--n6KwjXdZ2O6Hc",
+    "SECRET_KEY":  "YgJUWDoBNE86944Q6CSx",
+    "URL_IMAGE":  "https://face.titkul.com/ImageFace/TN",
+    "ID_OA":  "814185807844199601",
+    "LOGOTRUONG":  "https://trungtamthuoc.com/images/supplier/duoc-pham-tam-nhat-0-1333.jpg",
+    "LOGIN_PAGE":  {
+                       "useAcccout":  true
+                   },
+    "BACKGROUND_APP":  ""
+}

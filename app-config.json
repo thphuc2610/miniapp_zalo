@@ -1,0 +1,47 @@
+{
+    "app": {
+        "title": "Tâm Nhất Beauty Spa & Healthy",
+        "headerColor": "",
+        "textColor": "black",
+        "statusBarColor": "#ffffff",
+        "leftButton": "none",
+        "statusBar": "transparent",
+        "selfControlLoading": false,
+        "hideAndroidBottomNavigationBar": false,
+        "hideIOSSafeAreaBottom": false,
+        "actionBarHidden": true,
+        "textAlign": "left"
+    },
+    "debug": false,
+    "listCSS": [],
+    "listSyncJS": [],
+    "listAsyncJS": [],
+    "pages": [
+        "index",
+        "danhmuc",
+        "datlich",
+        "khuyenmai",
+        "profile",
+        "coso",
+        "dangky",
+        "danhgia",
+        "detail",
+        "giohang",
+        "gioithieu",
+        "hangthanhvien",
+        "lichsudon",
+        "notification",
+        "nouser",
+        "quenmatkhau",
+        "success",
+        "thanhtoan",
+        "thongtincanhan",
+        "tintuc"
+    ],
+    "template": {
+        "primaryColor": "#7ea331",
+        "prefixCurrencySymbol": false,
+        "currencySymbol": "đ",
+        "headerLogo": "static/logo.png"
+    }
+}
