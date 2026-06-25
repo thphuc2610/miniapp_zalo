@@ -168,7 +168,7 @@ export const ServicesCatalogPage: FC = () => {
                     </div>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
                       <div style={{ fontSize: 13, fontWeight: 800, color: "#be185d" }}>{item.price}</div>
-                      <button onClick={(e) => { e.stopPropagation(); checkAuth(() => { setQuickBooking({ isOpen: true, item: { id: item.id, title: item.title, price: item.price, image: item.isMembership ? displayImage : item.image }, actionType: "both" }); }, { icon: "cart", reason: text.loginReason, redirectTo: "/detail/" + item.type + "/" + item.id }); }} style={{ border: "none", background: "#be185d", color: "#fff", width: 26, height: 26, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", boxShadow: "var(--shadow-button)" }}>
+                      <button onClick={(e) => { e.stopPropagation(); checkAuth(() => { setQuickBooking({ isOpen: true, item: { id: item.id, title: item.title, price: item.price, image: item.isMembership ? displayImage : item.image }, actionType: "cart" }); }, { icon: "cart", reason: text.loginReason, redirectTo: "/detail/" + item.type + "/" + item.id }); }} style={{ border: "none", background: "#be185d", color: "#fff", width: 26, height: 26, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", boxShadow: "var(--shadow-button)" }}>
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                           <line x1="12" y1="5" x2="12" y2="19"></line>
                           <line x1="5" y1="12" x2="19" y2="12"></line>
