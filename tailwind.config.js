@@ -5,6 +5,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+      },
       colors: {
         primary: "var(--zmp-primary-color)",
         gray: "#767A7F",

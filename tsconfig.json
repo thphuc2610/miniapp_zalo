@@ -33,12 +33,45 @@
     "removeComments": true,
     "sourceMap": true,
     "resolveJsonModule": true,
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "paths": {
+      "app": ["app/index"],
+      "app/*": ["app/*"],
+      "shared": ["shared/index"],
+      "shared/*": ["shared/*"],
+      "features": ["features/index"],
+      "features/*": ["features/*"],
+      "components": ["shared/components/index"],
+      "components/*": ["shared/components/*"],
+      "utils": ["shared/utils/index"],
+      "utils/*": ["shared/utils/*"],
+      "service": ["shared/services/index"],
+      "service/*": ["shared/services/*"],
+      "hooks": ["shared/hooks/index"],
+      "hooks/*": ["shared/hooks/*"],
+      "state": ["app/state/index"],
+      "state/*": ["app/state/*"],
+      "static": ["shared/assets/index"],
+      "static/*": ["shared/assets/*"],
+      "css": ["app/css/index"],
+      "css/*": ["app/css/*"],
+      "models": ["shared/types/index"],
+      "models/*": ["shared/types/*"],
+      "data": ["shared/data/index"],
+      "data/*": ["shared/data/*"],
+      "constants": ["shared/constants/index"],
+      "constants/*": ["shared/constants/*"],
+      "types": ["shared/types/index"],
+      "types/*": ["shared/types/*"]
+    },
+    "types": ["node", "vite/client"]
   },
   "exclude": [
     "node_modules"
   ],
   "include": [
-    "src"
+    "src",
+    "vite.config.ts",
+    "api.config.ts"
   ]
 }

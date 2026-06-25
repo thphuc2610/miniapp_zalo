@@ -11,25 +11,19 @@ export default () => {
     base: "",
     resolve: {
       alias: {
-        "components": path.resolve(__dirname, "./src/components"),
-        "utils": path.resolve(__dirname, "./src/utils"),
-        "pages": path.resolve(__dirname, "./src/pages"),
-        "service": path.resolve(__dirname, "./src/service"),
-        "config": path.resolve(__dirname, "./src/config"),
-        "hooks": path.resolve(__dirname, "./src/hooks"),
-        "state": path.resolve(__dirname, "./src/state"),
-        "static": path.resolve(__dirname, "./src/static"),
-        "css": path.resolve(__dirname, "./src/css")
+        "app": path.resolve(__dirname, "./src/app"),
+        "shared": path.resolve(__dirname, "./src/shared"),
+        "features": path.resolve(__dirname, "./src/features"),
+        "components": path.resolve(__dirname, "./src/shared/components"),
+        "utils": path.resolve(__dirname, "./src/shared/utils"),
+        "service": path.resolve(__dirname, "./src/shared/services"),
+        "hooks": path.resolve(__dirname, "./src/shared/hooks"),
+        "state": path.resolve(__dirname, "./src/app/state"),
+        "static": path.resolve(__dirname, "./src/shared/assets"),
+        "css": path.resolve(__dirname, "./src/app/css"),
+        "models": path.resolve(__dirname, "./src/shared/types"),
+        "data": path.resolve(__dirname, "./src/shared/data")
       }
-    },
-    server: {
-      proxy: {
-        "/api": {
-          target: DEFAULT_API_BASE_URL,
-          changeOrigin: true,
-          secure: false,
-        },
-      },
     },
     plugins: [
       tsconfigPaths(),
@@ -44,5 +38,18 @@ export default () => {
         }),
       },
     ],
+    optimizeDeps: {
+      include: ["zmp-sdk"],
+    },
+    server: {
+      proxy: {
+        "/api": {
+          target: DEFAULT_API_BASE_URL,
+          changeOrigin: true,
+          secure: false,
+        },
+      },
+    },
   });
 };
+
